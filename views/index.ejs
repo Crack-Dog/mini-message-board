@@ -6,6 +6,11 @@
     <title>Index</title>
 </head>
 <body>
-    
+    <% messages.forEach((message) => { %>
+    <li><%= message.text %></li>
+    <li><%= message.user%></li> 
+    <li><%= message.added%></li>
+        <% }); %>
+        <a href="http://localhost:3000/new">New messages</a>
 </body>
 </html>
